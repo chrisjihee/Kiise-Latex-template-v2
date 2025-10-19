@@ -1,0 +1,60 @@
+% Template: 한국정보과학회 학술대회 논문작성 양식 (latex)
+% Main sources
+% - http://ids.snu.ac.kr/wiki/LaTeX_template_for_KCC
+% - https://github.com/leejaymin/Kiise-Latex-template
+% Edited by Jinhong Jung (Soongsil University, DMLAB)
+
+\documentclass[preprint]{kcc} % for review
+%\documentclass{kcc} % for publication
+
+\input{packages}
+\input{definitions}
+							
+% set title, author, abstract
+\title{국문 제목}
+\author{
+저자1 국문이름$^{\circ}$, 저자2 국문이름\\
+저자 소속 국문명 \\
+\{author1email, author2email\}@domain.kr
+}
+\engtitle{English Title}
+\engauthor{
+First Author Name, Second Author Name\\
+Author Affiliation\\
+}
+\abstract{
+\input{00abstract}
+}
+
+
+\begin{document}
+
+\maketitle
+
+\section{서론}
+\input{01introduction}
+
+\section{관련 연구}
+\input{02related}
+
+\section{배경 지식}
+\input{03preliminaries}
+
+\section{제안 방법}
+\input{04proposed}
+
+\section{실험}
+\input{05experiments}
+
+\section{결론}
+\input{06conclusion}
+
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\newpage
+\appendix
+\input{07appendix}
+
+
+\end{document}
